@@ -252,7 +252,7 @@ function App() {
               onChange={(e) => {
                 changeCity(e);
               }}
-              id="city-name"
+              id="city"
             >
               {" "}
               {selectedState != null &&
@@ -266,7 +266,7 @@ function App() {
             <select
               className="form-control"
               name="landMarkList"
-              id="landmark-name"
+              id="landmark"
               onChange={(e) => {
                 changeLandmark(e);
               }}

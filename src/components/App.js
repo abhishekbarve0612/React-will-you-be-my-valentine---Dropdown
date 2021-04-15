@@ -252,7 +252,7 @@ function App() {
               onChange={(e) => {
                 changeCity(e);
               }}
-              id="city"
+              id="city-name"
             >
               {" "}
               {selectedState != null &&
@@ -266,7 +266,7 @@ function App() {
             <select
               className="form-control"
               name="landMarkList"
-              id="landmark"
+              id="landmark-name"
               onChange={(e) => {
                 changeLandmark(e);
               }}
@@ -284,7 +284,7 @@ function App() {
         <div className="col-6">
           {selectedState != null && (
             <div>
-              <div id="state-name">{states[selectedState].name}</div>
+              <div id="state-title">{states[selectedState].name}</div>
               <div id="state-description">
                 {states[selectedState].description}
               </div>
@@ -293,7 +293,7 @@ function App() {
 
           {selectedState != null && selectedCity != null && (
             <div>
-              <div id="city-name">
+              <div id="city-title">
                 {states[selectedState].city[selectedCity].name}
               </div>
               <div id="city-description">
@@ -305,7 +305,7 @@ function App() {
             selectedCity != null &&
             selectedLandmark != null && (
               <div>
-                <div id="landmark-name">
+                <div id="landmark-title">
                   {
                     states[selectedState].city[selectedCity].landmarks[
                       selectedLandmark

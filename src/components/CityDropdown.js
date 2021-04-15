@@ -5,7 +5,7 @@ const CityDropdown = ({ states, selectedState }) => {
   return (
     <div>
       <label htmlFor="cityList">Select City</label>
-      <select name="cityList" id="cityList">
+      <select name="cityList" id="city-name">
         {cityList.map((city, key) => (
           <option value={key}>{city.name}</option>
         ))}

@@ -6,7 +6,7 @@ const StateDropdown = ({ states, changeState }) => {
       <select
         className="form-control"
         name="stateList"
-        id="state"
+        id="state-name"
         onChange={(e) => changeState(e)}
       >
         {" "}
